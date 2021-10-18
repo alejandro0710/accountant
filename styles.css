@@ -41,14 +41,13 @@
   border: 1px rgb(223, 164, 69) solid;
 }
 
-@media(max-width:500px){
-
-.container{
+@media (max-width: 500px) {
+  .container {
     width: 100%;
     height: 400px;
-}
+  }
 
-.botones{
+  .botones {
     flex-direction: column;
-}
+  }
 }
