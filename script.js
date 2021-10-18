@@ -29,12 +29,12 @@ btnDisminuir.addEventListener('click', () => {
 
 body.addEventListener('keyup', (a) => {
   if (a.keyCode === 65) {
+    console.log('precionaste la tecla A para Disminuir');
     if (contador > 0) {
       contador--;
     }
-    console.log('precionaste la tecla A para Disminuir');
-    numero.textContent = contador;
   }
+  numero.textContent = contador;
 });
 
 btnRecetear.addEventListener('click', () => {
