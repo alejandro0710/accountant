@@ -11,13 +11,6 @@ btnAunmentar.addEventListener('click', () => {
   numero.textContent = contador;
 });
 
-body.addEventListener('keyup', (a) => {
-  if (a.keyCode === 67) {
-    contador++;
-    console.log('precionaste la tecla C para Aumentar');
-    numero.textContent = contador;
-  }
-});
 
 btnDisminuir.addEventListener('click', () => {
   console.log('Me diste click Disminuir');
@@ -28,13 +21,17 @@ btnDisminuir.addEventListener('click', () => {
 });
 
 body.addEventListener('keyup', (a) => {
-  if (a.keyCode === 65) {
+  if (a.keyCode === 67) {
+    contador++;
+    console.log('precionaste la tecla C para Aumentar');
+    numero.textContent = contador;
+  } else if (a.keyCode === 65) {
     console.log('precionaste la tecla A para Disminuir');
     if (contador > 0) {
       contador--;
+      numero.textContent = contador;
     }
   }
-  numero.textContent = contador;
 });
 
 btnRecetear.addEventListener('click', () => {
